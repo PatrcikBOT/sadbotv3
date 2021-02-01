@@ -38,24 +38,24 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:RAMLAN ID\n' 
-            + 'ORG:OWNER BOTZ;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' 
+            + 'FN:JAN MINTA SC SU\n' 
+            + 'ORG:OWNER BOT;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=628121819798:+62 812-1819-798\n' 
             + 'END:VCARD' 
-prefix = '!'
+prefix = '#'
 blocked = []   
-limitawal = 20
+limitawal = 25
 memberlimit = 2
-cr = '*𝐋𝐀𝐍𝐍 𝐁𝐎𝐓𝐙 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃*'
+cr = '*BUKANNN INI PATRICKKK*'
 
 /*
 ]=====> SETTINGS <=====[
 */
-const ownerNumber = ["6285559240360@s.whatsapp.net","6285559240360@s.whatsapp.net"]
-const botName = '𝐋𝐀𝐍𝐍 𝐁𝐎𝐓𝐙'
-const ownerName = 'RAMLAN ID'
+const ownerNumber = ["628121819798@s.whatsapp.net","6285559240360@s.whatsapp.net"]
+const botName = 'Patrick BOT'
+const ownerName = 'IBROGANS'
 const BarBarKey = 'YOUR_APIKEY'
-const VhtearKey = 'YOUR_APIKEY'
+const VhtearKey = 'RAMLANGANS'
 const TobzKey = 'YOUR_APIKEY'
 /*
 ]=====> SETTINGS <=====[
@@ -84,7 +84,8 @@ const { gabut } = require('./database/menu/gabut')
 const { groupm } = require('./database/menu/group')
 const { download } = require('./database/menu/download')
 const { dompet } = require('./database/menu/dompet')
-const { random } = require('./database/menu/random')
+
+const { random } = require('./database/menu/random')
 const { other } = require('./database/menu/other')
 const { owb } = require('./database/menu/owb')
 const { maker } = require('./database/menu/maker')
@@ -298,7 +299,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Udah Punya Doi/Blm: \n➸ Pap Muka dumlu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!`
+				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Udah Punya Doi/Blm: \n➸ Pap Muka dulu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -308,7 +309,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `SELAMAT TINGGAL... @${num.split('@')[0]}👋* \n_Jasamu akan saya kubur dalam dalam_`
+				teks = `SELAMAT TINGGAL... Anak Pungutt @${num.split('@')[0]}👋* \n_Semoga tidak jadi beban keluarga ya!! *JANGAN BALIK LAGI NANTI JADI BEBAN GRUP SU*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
